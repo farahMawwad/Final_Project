@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AiFillDelete } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 import React from "react";
 function Deleteprouduct() {
   return (
@@ -8,7 +9,9 @@ function Deleteprouduct() {
         <h3 className='mt-2'>dashboard</h3>
         <div className='  row   p-3 ' style={{height:630,textAlign:"right",background:"#FFB1E4"}}>
        
-  <div className='mt-2'>All data</div>
+        <div className='mt-2'>
+            <Link style={{textDecoration: 'none' ,color:"black"}} to="/">All data</Link>
+            </div>
 
   
             <div className='mt-2'>Add product</div>
